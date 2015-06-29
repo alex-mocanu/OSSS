@@ -72,7 +72,7 @@
 
 		var trans1 = function(){
 			myList2.appendChild(this);
-			this.onclick = trans2
+			this.onclick = trans2;
 		}
 
 		var trans2 = function(){
