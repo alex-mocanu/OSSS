@@ -31,8 +31,7 @@
     buton.onclick = function() {
       // console.log("am dat click");
       //ascundeButon()
-			//schimbaNume();
-			awesomeFunction();
+			schimbaNume();
     }
 
     var ascundeButon = function() {
@@ -70,6 +69,21 @@
 			myLI.appendChild(myText);
 			myList2.appendChild(myLI);
 		}
+
+		var trans1 = function(){
+			myList2.appendChild(this);
+			this.onclick = trans2;
+		}
+
+		var trans2 = function(){
+			myList1.appendChild(this);
+			this.onclick = trans1;
+		}
+
+		for(var i = 0; i < myList1.getElementsByTagName("li").length; i++)
+			myList1.getElementsByTagName("li")[i].onclick = trans1;
+		for(var i = 0; i < myList2.getElementsByTagName("li").length; i++)
+			myList2.getElementsByTagName("li")[i].onclick = trans2;
 
     // Exercitii
     // 0. sa faceti acelasi lucru pentru myList2
