@@ -3,16 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<title> Pagina simpla </title>
-		
-		<link rel="stylesheet" href="/home/Desktop/bootstrap-3.3.5-dist/css/bootstrap.css">
 	</head>
 
 	<body>
-		<h1 style="color: tomato;"> Programul scolii de vara OSSS </h1>
 
-		<p>para 1</p>
-		<p class="coloreaza-galben font-marit">para2</p>
-		<p class="font-marit">para3</p>
+		<h1> Programul scolii de vara OSSS </h1>
 
 		<table>
 			<thead>
